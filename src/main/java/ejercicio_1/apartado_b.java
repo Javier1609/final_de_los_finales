@@ -1,7 +1,15 @@
 package ejercicio_1;
 
 public class apartado_b {
-    public int[][] createMatrix(int N) {
+    private int N;
+    private int[][] matrix;
+
+    public apartado_b(int N) {
+        this.N = N;
+        this.matrix = createMatrix();
+    }
+
+    private int[][] createMatrix() {
         int[][] matrix = new int[N][N];
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < N; j++) {
@@ -9,5 +17,15 @@ public class apartado_b {
             }
         }
         return matrix;
+    }
+
+    public int sumMatrix() {
+        int sum = 0;
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < N; j++) {
+                sum += matrix[i][j];
+            }
+        }
+        return sum;
     }
 }
