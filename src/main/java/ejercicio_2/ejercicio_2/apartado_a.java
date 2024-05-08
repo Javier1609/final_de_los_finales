@@ -1,0 +1,3 @@
+//Una tabla hash es ideal para búsquedas rápidas (O(1)) pero no mantiene un orden. Un árbol, como el árbol binario de búsqueda, mantiene un orden, permitiendo operaciones eficientes de búsqueda, inserción y eliminación (O(log n)), pero puede requerir más memoria.
+//
+//Usa una tabla hash cuando necesites búsquedas rápidas y no te importe el orden. Usa un árbol cuando necesites mantener un orden o realizar operaciones que dependan del orden.

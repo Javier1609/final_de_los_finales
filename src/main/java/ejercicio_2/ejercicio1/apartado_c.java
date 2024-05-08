@@ -1,4 +1,4 @@
-package ejercicio_1;
+package ejercicio_2.ejercicio1;
 
 public class apartado_c {
     private int[] data;
