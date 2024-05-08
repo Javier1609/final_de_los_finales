@@ -24,6 +24,6 @@ public class apartado_c {
             }
         }
         System.out.println("Number of steps: " + steps);
-        return -1; // Si no se encuentra el objetivo
+        return -1;
     }
 }
