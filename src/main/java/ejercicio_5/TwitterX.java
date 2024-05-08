@@ -64,7 +64,7 @@ class Usuario2 {
         if (contenido.length() > 140) {
             throw new ExcepciónExtendida("El tweet no puede tener más de 140 caracteres.");
         }
-        Tweet2 nuevoTweet = new Tweet2(contenido, this);
+        Tweet2 nuevoTweet = new Tweet2(contenido);
         addTweet(nuevoTweet);
         System.out.println("¡Tweet publicado con éxito!");
     }
@@ -79,11 +79,11 @@ class Usuario2 {
     }
 }
 
-class Tweet2 {
+class Tweet3 {
     private String contenido;
     private Usuario2 remitente;
 
-    public Tweet2(String contenido, Usuario2 remitente) {
+    public void Tweet(String contenido, Usuario2 remitente) {
         this.contenido = contenido;
         this.remitente = remitente;
     }
